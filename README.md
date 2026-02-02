@@ -28,9 +28,14 @@ The model generates high-fidelity traces using OpenCV contour detection:
 
 > **Note:** These high-accuracy masks provide the foundation for downstream morphometric analysis, such as membrane thickness quantification (Proprietary/Patent-Pending).
 
-## 🚀 Usage
+## Usage
 
 ### 1. Installation
 Install all required dependencies using the following command:
 ```bash
 pip install -r requirements.txt
+
+**### 2. Installation Run benchmarking & Analysis**
+To process the images and verify the model against ground truth, run:
+```bash
+python main.py --input data/test_set/ --coco_json data/_annotations.coco.json
