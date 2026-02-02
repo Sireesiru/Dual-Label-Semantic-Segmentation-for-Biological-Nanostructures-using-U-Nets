@@ -7,7 +7,7 @@ This repository focuses on the architectural implementation and training optimiz
 
 ## Technical Implementation
 * **Architecture:** 5-level deep U-Net with skip connections to preserve spatial gradients during the decoding phase.
-* **Input/Output:** Grayscale input ($1 \times 320 \times 320$) with a multi-label output ($2 \times 320 \times 320$).
+* **Input/Output:** Grayscale input ($1 \times 640 \times 640$) with a multi-label output ($2 \times 640 \times 640$).
 * **Optimization:** Implemented a hybrid **Dice-BCE Loss** function to address class imbalance (membranes occupy <5% of the total pixel area).
 * **Training Logic:** Includes Early Stopping and Best-Model checkpointing based on Validation Dice scores.
 
