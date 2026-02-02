@@ -42,3 +42,18 @@ python main.py --input data --coco_json data/_annotations.coco.json
 **3. How to run on New Images (Inference Only)**
 To run the analysis on your own images without providing a ground truth JSON file:
 python main.py --input data
+
+
+
+
+## Usage
+
+### 1. Installation
+Install the required dependencies from the root directory:
+```bash
+pip install -r requirements.txt
+
+
+python main.py --input data/test_set/ --coco_json data/_annotations.coco.json
+
+python main.py --input data/test_set/
