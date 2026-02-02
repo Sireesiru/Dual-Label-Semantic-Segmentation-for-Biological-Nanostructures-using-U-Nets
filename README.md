@@ -34,6 +34,7 @@ Install all required dependencies using the following command:
 ```bash
 pip install -r requirements.txt
 
+
 **### 2. Installation Run benchmarking & Analysis**
 To process the images and verify the model against ground truth, run:
 ```bash
@@ -42,4 +43,7 @@ python main.py --input data --coco_json data/_annotations.coco.json
 **3. How to run on New Images (Inference Only)**
 To run the analysis on your own images without providing a ground truth JSON file:
 python main.py --input data
+
+
+
 
