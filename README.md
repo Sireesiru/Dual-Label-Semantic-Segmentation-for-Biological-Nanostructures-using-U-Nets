@@ -2,7 +2,6 @@
 
 ## Overview
 This project implements a customized U-Net architecture designed to perform high-fidelity semantic segmentation of bacterial membranes from Electron Microscopy (EM) imagery. The model simultaneously segments the **Outer Membrane (OM)** and **Inner Membrane (IM)** as distinct labels, achieving a Dice Coefficient of **0.97**.
-
 This repository focuses on the architectural implementation and training optimization required to resolve nanometer-scale biological structures.
 
 ## Technical Implementation
@@ -33,16 +32,17 @@ The model generates high-fidelity traces using OpenCV contour detection:
 Install all required dependencies using the following command:
 ```bash
 pip install -r requirements.txt
-
-
-## 2. Installation Run benchmarking & Analysis
+```
+## 2. Run benchmarking & analysis
 To process the images and verify the model against ground truth, run:
 ```bash
 python main.py --input data --coco_json data/_annotations.coco.json
-
-## 3. How to run on New Images (Inference Only)
+```
+## 3. How to run on new images (Inference Only)
 To run the analysis on your own images without providing a ground truth JSON file:
+```bash
 python main.py --input data
+```
 
 
 
