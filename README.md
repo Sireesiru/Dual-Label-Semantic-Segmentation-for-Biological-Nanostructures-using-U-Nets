@@ -2,7 +2,7 @@
 
 ## Overview
 This project implements a customized U-Net architecture designed to perform high-fidelity semantic segmentation of bacterial membranes from Electron Microscopy (EM) imagery. The model simultaneously segments the **Outer Membrane (OM)** and **Inner Membrane (IM)** as distinct labels, achieving a Dice Coefficient of **0.97**.
-This repository focuses on the architectural implementation and training optimization required to resolve nanometer-scale biological structures.
+This repository focuses on the architectural implementation and training optimization required to resolve nanometer-scale biological structures. Beyond segmentation, this tool includes a ML-based quantitative analysis pipeline that extracts nanometer-scale measurements (Area, Perimeter, and Periplasmic Space)
 
 ## Technical Implementation
 * **Architecture:** 5-level deep U-Net with skip connections to preserve spatial gradients during the decoding phase.
@@ -47,7 +47,6 @@ To run the analysis on your own images without providing a ground truth JSON fil
 ```bash
 python main.py --input data
 ```
-
 
 
 
